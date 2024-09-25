@@ -1,22 +1,33 @@
+# Import libraries 
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly_express as px
 
-# Load dataset
-vehicles = pd.read_csv('vehicles_us.csv') 
+# Read the dataset from a CSV file
+vehicles = pd.read_csv('vehicles_us.csv')
 
 # Header
-st.header("My Vehicle Data Analysis App")
+st.header("Vehicles Dataset")
 
-# Checkbox to toggle histogram
+# Checkbox to toggle histogram display
 show_histogram = st.checkbox("Show Histogram")
 
+# Histogram for Model Year
 if show_histogram:
-    # Create a histogram
-    fig_hist = px.histogram(data, x='column_name')  # Replace 'column_name' with your data column
-    st.write("Histogram of Column Name")  # Adding a description for the histogram
-    st.write(fig_hist)  # Using st.write to display the histogram
+    histogram_fig = px.histogram(vehicles, x='model_year', nbins=20, title='Distribution of Model Year')
+    st.plotly_chart(histogram_fig)
 
 # Scatter plot
-fig_scatter = px.scatter(data, x='x_column', y='y_column')  # Replace 'x_column' and 'y_column' with your data columns
-st.plotly_chart(fig_scatter)  # Displaying scatter plot
+
+ # Scatter plot of Odometer versus Price
+scatter_fig = px.scatter(
+    vehicles,
+    x='odometer',
+    y='price',
+    color='condition',  
+    color_discrete_sequence=['red', 'blue', 'green', 'purple', 'yellow', 'orange'],
+    title='Scatter Plot of Price vs. Odometer',
+    labels={'odometer': 'Odometer (miles)', 'price': 'Price ($)'},
+    hover_name='model'  # Optional: Shows the model on hover
+    )
+st.plotly_chart(scatter_fig)
