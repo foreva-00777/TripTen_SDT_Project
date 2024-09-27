@@ -141,7 +141,7 @@ streamlit run app.py
 7. Deploy the application and wait for the build to succeed.
 
 8. Verify the application at https://tripten-sdt-project.onrender.com.
- URL: http://0.0.0.0:10000
+
 
 ## How to Submit - Feedback Process 
 
