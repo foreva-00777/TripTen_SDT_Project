@@ -21,8 +21,6 @@ This project is designed to enjance your software deelopment skills by building 
 - [Deployment](#deployment)
 - [How to Submit - Feedback Process](#submit-feedback-process)
 
-
-
 ## Demo 
 
 [Link to live demo](#)(Insert link once the application is deployed)
@@ -104,7 +102,8 @@ Throughout the project changes, modifications and updates were committed and pus
 
 ### Step 5: Deploy the Application to Render
 
-1. Create a requirements.txt file in the root directory:
+1. **Create a requirements.txt** 
+- Location: Create a requirements.txt file in the root directory:
 ```makefile
 pandas==2.0.3
 streamlit==1.25.0
