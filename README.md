@@ -120,20 +120,28 @@ port = 10000
 serverAddress = "0.0.0.0"
 serverPort = 10000
 ```
-3. Open Render and create a new web service linked to the Github repository. 
+3. Commit and Push to remote repository
 
-4. In the Render settings, set the Build Command:
+```bash
+git add requirements.txt .streamlit/config.toml
+git commit -m "Add deployment configuration for Render"
+git push origin main
+```
+
+4. Deploy on Render. Open Render and create a new web service linked to the Github repository. 
+
+5. In the Render settings, set the Build Command:
 ```
 pip install -r requirements.txt
 ```
-5. Set the Start Command: 
+6. Set the Start Command: 
 ```arduino
 streamlit run app.py
 ```
-6. Deploy the application and wait for the build to succeed.
+7. Deploy the application and wait for the build to succeed.
 
-7. Verify the application at https://<APP_NAME>.onrender.com/.
-
+8. Verify the application at https://tripten-sdt-project.onrender.com.
+ URL: http://0.0.0.0:10000
 
 ## How to Submit - Feedback Process 
 
