@@ -20,7 +20,7 @@ This project is designed to enjance your software deelopment skills by building 
 - [Development Instructions](#development-instructions)
 - [Deployment](#deployment)
 - [How to Submit - Feedback Process](#submit-feedback-process)
-- [License](#license)
+
 
 
 ## Demo 
@@ -144,4 +144,3 @@ Submit a link to your GitHub repository and the URL of your deployed app on Rend
 
 Expect to go through multiple cycles of feedback and revision. This iterative process is normal and helps refine your application.
 
-## Licence 
