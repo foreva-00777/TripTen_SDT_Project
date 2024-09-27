@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-4. **Access the application** : Open your browser and go to http://localhost:(provide localhost number)
+4. **Access the application** : Open your browser and go to (http://127.0.0.1:10000/)
 
 ### Step 2: Download the Data File. 
 
@@ -150,4 +150,3 @@ Submit a link to your GitHub repository and the URL of your deployed app on Rend
 ### Revision Cycles
 
 Expect to go through multiple cycles of feedback and revision. This iterative process is normal and helps refine your application.
-
