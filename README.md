@@ -23,7 +23,7 @@ This project is designed to enjance your software deelopment skills by building 
 
 ## Demo 
 
-[Link to live demo](#)(Insert link once the application is deployed)
+You can view the app live at: (https://tripten-sdt-project.onrender.com)
 
 ## Features
 
@@ -140,7 +140,7 @@ streamlit run app.py
 ```
 7. Deploy the application and wait for the build to succeed.
 
-8. Verify the application at https://tripten-sdt-project.onrender.com.
+8. Verify the application at https://tripten-sdt-project.onrender.com
 
 
 ## How to Submit - Feedback Process 
