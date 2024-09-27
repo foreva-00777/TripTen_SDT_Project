@@ -19,7 +19,7 @@ This project is designed to enjance your software deelopment skills by building 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Development Instructions](#development-instructions)
 - [Deployment](#deployment)
-- [Feedback Process](#feedback-process)
+- [How to Submit - Feedback Process](#submit-feedback-process)
 - [License](#license)
 
 
@@ -102,23 +102,46 @@ Throughout the project changes, modifications and updates were committed and pus
 
 ## Deployment
 
-To deploy the application on Render:
+### Step 5: Deploy the Application to Render
 
-1. Sign up or log in to your Render account.
+1. Create a requirements.txt file in the root directory:
+```makefile
+pandas==2.0.3
+streamlit==1.25.0
+altair==5.0.1
+plotly==5.15.0
+```
+2. Create a .streamlit/config.toml file with the following content
+```toml
+[server]
+headless = true
+port = 10000
 
-2. Create a new web service and connect your GitHub repository.
+[browser]
+serverAddress = "0.0.0.0"
+serverPort = 10000
+```
+3. Open Render and create a new web service linked to the Github repository. 
 
-3. Set the build command (e.g., pip install -r requirements.txt) and start command (e.g., python app.py).
+4. In the Render settings, set the Build Command:
+```
+pip install -r requirements.txt
+```
+5. Set the Start Command: 
+```arduino
+streamlit run app.py
+```
+6. Deploy the application and wait for the build to succeed.
 
-4. Click "Create Web Service" to begin the deployment.
+7. Verify the application at https://<APP_NAME>.onrender.com/.
 
-For detailed instructions, refer to the Render documentation.
 
-## Feedback Process 
+## How to Submit - Feedback Process 
 
-Once you have completed the project, submit your work to the project reviewer for assessment. Feedback will typically be provided within 24 hours. Use this feedback to make necessary adjustments before resubmitting.
+Submit a link to your GitHub repository and the URL of your deployed app on Render. Ensure your README.md includes this information. Once you have completed the project, submit your work to the project reviewer for assessment. Feedback will typically be provided within 24 hours. Use this feedback to make necessary adjustments before resubmitting.
 
 ### Revision Cycles
 
 Expect to go through multiple cycles of feedback and revision. This iterative process is normal and helps refine your application.
 
+## Licence 
