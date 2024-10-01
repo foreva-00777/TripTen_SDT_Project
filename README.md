@@ -2,7 +2,7 @@
 
 ## Project Overview.
 
-This project is designed to enjance your software deelopment skills by building and deploying a web application dashboard to the Render cloud service. The dashboard will utilize a dataset of car sales advertisements. 
+This project is designed to enhance your software development skills by building and deploying a web application dashboard to the Render cloud service. The dashboard will utilize a dataset of car sales advertisements. 
 
 ## Objectives 
 - Develop a web application that visualizes care sales data.
@@ -17,13 +17,14 @@ This project is designed to enjance your software deelopment skills by building 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Running the App.py Locally](#running-the-app-locally)
 - [Development Instructions](#development-instructions)
 - [Deployment](#deployment)
 - [How to Submit - Feedback Process](#submit-feedback-process)
 
 ## Demo 
 
-You can view the app live at: (https://tripten-sdt-project.onrender.com)
+You can view the app live at: [https://tripten-sdt-project.onrender.com](https://tripten-sdt-project.onrender.com)
 
 ## Features
 
@@ -71,6 +72,26 @@ python app.py
 ### Step 2: Download the Data File. 
 
 Download the car advertisement dataset (e.g., vehicles_us.csv) and place it in the root directory of the project.
+
+## Running the App Locally
+
+To run the application (web_app.py) locally, follow these steps: 
+
+1. **Navigate to the project directory** 
+```bash
+cd TripTen_SDT_Project
+```
+
+2. **Ensure all dependencies are installed.**
+```bash 
+pip install -r requirements.txt
+```
+
+3. **Run the application:**
+```bash 
+streamlit run app.py
+```
+4. **Access the application:** Open your browser and go to [http://127.0.0.1:8501/](http://127.0.0.1:8501/). Note that Streamlit typically runs on port 8501, so adjust if necessary.
 
 ### Step 3: Exploratory Data Analysis
 Create an EDA.ipynb Jupyter notebook in VS Code and save it in the notebooks directory.
@@ -128,7 +149,7 @@ git commit -m "Add deployment configuration for Render"
 git push origin main
 ```
 
-4. Deploy on Render. Open Render and create a new web service linked to the Github repository. 
+4. **Deploy on Render.** Open Render and create a new web service linked to the Github repository. 
 
 5. In the Render settings, set the Build Command:
 ```
@@ -140,7 +161,7 @@ streamlit run app.py
 ```
 7. Deploy the application and wait for the build to succeed.
 
-8. Verify the application at https://tripten-sdt-project.onrender.com
+8. Verify the application at [https://tripten-sdt-project.onrender.com](https://tripten-sdt-project.onrender.com).
 
 
 ## How to Submit - Feedback Process 
